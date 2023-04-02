@@ -23,6 +23,8 @@ def index():
         results=results
     )
 
+# $env:FLASK_APP='hello.py';$env:FLASK_DEBUG='1';$env:TEMPLATES_AUTO_RELOAD='1'; flask run
+
 
 @app.errorhandler(GitHubApiError)
 def handle_api_error(error):
